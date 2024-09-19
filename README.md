@@ -4,9 +4,13 @@ This project consists of creating a site allowing a team o collaborate and manag
 
 ## Preview
 <details>
-  <summary>My maps</summary>
-  <img src="https://github.com/Tay9875/World-Map/assets/96668181/c02b8d1d-0620-4112-8998-79e2063c63d7"/>
-  <img src="https://github.com/Tay9875/World-Map/assets/96668181/6d382e73-07c6-4332-becf-a285c4a84761"/>
+  <summary>My Website</summary>
+  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/accueil.jpg"/>
+  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/connexion.jpg"/>
+  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/inscription.jpg"/>
+  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/projects.jpg"/>
+  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/mur.jpg"/>
+  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/mur%20perso.jpg"/>
 </details>
 
 ## Installation
