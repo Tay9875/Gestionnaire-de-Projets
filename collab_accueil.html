@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil</title>
+        <!--Stylesheet CSS-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Muli&family=Helvetica Neue&family=Open Sans:wght@400;700&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" type="text/css" href="collab_accueil.css">
+
+    </head>
+    <body>
+        <header class="fixed">
+            <img src="logo/6.png">
+            <b><a href="#descriptif">Description</a></b>
+            <b><a href="#collaboration">Collaboration</a></b>
+            <b><a href="#telecharger">Téléchargement</a></b>
+            <button onclick="redirect()">Commencer</button>
+        </header>
+
+        <br><br><br>
+
+        <section class="theme1 divided">
+            <div class="left space">
+                <h2>Collab pour révolutionner notre manière de collaborer</h2><br>
+                <p>Collab est un site web d'entreprise ou personnel, en fonction de vos besoins, et complètement gratuite qui vous permet de communiquer avec vos collaborateur et vous aide à mieux organiser vos pensées et votre travail.</p>
+            </div>
+            <img src="images/3-2.png">
+        </section><br><br><br>
+
+        <section class="center">
+            <h1><b>Débloquez votre sens de l'organisation</b></h1>
+        </section>
+
+        <br><br><br>
+
+        <section class="divided">
+            <img src="images/4-2.png">
+            <div class="left space" id="descriptif">
+                <h2>Hmmm! A quoi ça sert?</h2>
+                <p>Collab met plusieurs outils à disposition, comme:</p>
+                <ul>
+                    <li>Un mur pour voir la progression de toutes les tâches du projet</li>
+                    <li>Un mur personnel, pour savoir exactement ce qu'on attends de nous</li>
+                    <li>Un calendrier vous indiquant toutes les deadlines à respecter</li>
+                    <li>Un éditeur pour poser vos idées</li>
+                    <li>Et plus encore ...</li>
+                </ul>
+                <p>Tout cela pour que vos pensées soient structurées, et votre travail bien fait.<br>Avec facilité.</p>
+            </div>
+        </section>
+
+
+        <section class="center">
+            <b><h1>Intéressé ?</h1>
+            <p>Des projets en vue, rendez vous la tâche plus facile et travailler sur collab !</p></b>
+            <button onclick="redirect()">Commencer</button>
+        </section>
+
+        <section class="theme2">
+            <div class="left space" id="collaboration">
+                <h2>Communiquer avec vos collaborateurs</h2>
+                <p>Ce service vous permet de communiquer entre vous et de suivre chaque tâche sans passer par d'autres plateformes différentes.</p>
+            </div>
+
+            <div class="left space" id="telecharger">
+                <h2>Téléchargeable</h2>
+                <p>Téléchargez des fichiers avec l'éditeur et partager votre contenu avec vos collaborateurs facilement.</p>
+            </div> 
+        </section>
+
+        <footer>
+            <small>Créée en 2024.</small>
+        </footer>
+    </body>
+
+    <script type="text/javascript">
+        function redirect(){
+            location.href = 'collab_connexion.php'; // Redirection vers la prochaine étape du jeu
+        }
+    </script>
+</html>

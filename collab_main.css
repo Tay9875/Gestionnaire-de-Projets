@@ -1,0 +1,179 @@
+body{
+	font-family: 'Helvetica Neue';
+	height: 800px;
+	padding: 0;
+}
+
+.body{
+	margin: 10px;
+	padding: 10px;
+}
+
+header{
+	overflow: hidden;
+	position: static;
+	background-color: #EEF1EF;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 180px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+header nav a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+.fixed{
+	position: fixed;
+}
+
+header img{
+	height: 80px;
+}
+
+h2{
+	font-weight: 600;
+}
+
+h6{
+	font-weight: 800;
+}
+
+.element-left{
+	background-color: white;
+	border-left: solid 5px #ffbd59;
+	padding: 10px;
+	margin: 5px;
+
+	box-shadow: 0px 2px 5px #363537;
+}
+
+.element-middle{
+	background-color: white;
+	border-left: solid 5px #FF6F4B;
+	padding: 10px;
+	margin: 5px;
+
+	box-shadow: 0px 2px 5px #363537;
+}
+
+.element-right{
+	background-color: white;
+	border-left: solid 5px #E13661;
+	padding: 10px;
+	margin: 5px;
+
+	box-shadow: 0px 2px 5px #363537;
+}
+
+.element{
+	border-radius: 15px;
+	background-color: white;
+	padding: 10px;
+	margin: 5px;
+
+	box-shadow: 0px 2px 5px #363537;
+}
+
+.urgence{
+	background-color: green;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 3px;
+	width: 100px;
+	text-align: center;
+}
+
+input.text{
+	width: 100%;
+	border-radius: 15px;
+	padding: 5px;
+	min-height: 100px;
+	margin-bottom: 5px;
+}
+
+input.date{
+	border-radius: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.info{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+div .button-background{
+	background-color: ;
+}
+
+i:hover{
+	border-bottom: solid 1px black;
+}
+
+select{
+	border-radius: 30px;
+	background-color: #363537;
+	color: #EEF1EF;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+button{
+	border-radius: 30px;
+	border: solid 1px #363537;
+	background-color: #363537;
+	color: #EEF1EF;
+	font-size: 14px;
+	font-weight: 800;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+button:hover{
+	background-color: white;
+	color: #363537;
+}
+
+button.ajout{
+	background-color: white;
+	color: #363537;
+}
+
+button.ajout:hover{
+	background-color: white;
+	color: #363537;
+	border: solid 2px #363537;
+}
+
+.connexion{
+	border-radius: 30px;
+	background-color: white;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: nowrap;
+}
+
+.connexion-circle{
+	background-color: green;
+	height: 20px;
+	width: 20px;
+	border-radius: 100px;
+}
