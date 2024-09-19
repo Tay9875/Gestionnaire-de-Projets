@@ -29,6 +29,9 @@ Project idea: [https://devilsworkshop.itch.io/big-pixel-isometric-block-pack-fre
 - Sublime Text
 - Wampserver
 
+## Comments
+This project can easily be perfected but even if it's not the best it was a great way of training myself in PHP and using PHP in a HTML page. An important comment that I have to make is originally all the wall requests weren't divided in wall_1, wall_2 and wall3 (the same goes for the personal_wall) and they were in the same folder but once I started really applying other functions they didn't like the multi query document so just to make it easy for me I divided them, but I know that functions and other solutions could probably used to make the whole process easier and shorter.
+
 ## Future updates
 - [x] Front page
 - [x] CSS for every page
