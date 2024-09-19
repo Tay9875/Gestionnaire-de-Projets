@@ -24,7 +24,7 @@ For the BITMAPs, you'll need to create a "isometricTiles" folder in said project
 Normally, everything is set as i should be.
 
 ### Credits
-Project idea: [https://devilsworkshop.itch.io/big-pixel-isometric-block-pack-free-2d-sprites](https://www.docstring.fr/blog/10-idees-de-projets-a-realiser-avec-django/#1-un-systeme-de-gestion-de-projets)
+Project idea: https://www.docstring.fr/blog/10-idees-de-projets-a-realiser-avec-django/#1-un-systeme-de-gestion-de-projets
 
 ## Built with
 - HTML
