@@ -24,10 +24,10 @@
                 <a href="collab_accueil.html"><img src="logo/6.png" class="logo"></a><br>
                 <h1>Bienvenue sur collab</h1>
                 <p>Commencez a mieux gérer vos projets, gratuitement.</p>
-                <input type="text" id="username" name="username" placeholder="nom"><br><br>
-                <input type="text" id="email" name="email" placeholder="nom@email.com"><br><br>
-                <input type="pw" id="pw" name="pw" placeholder="mot de passe"><br><br>
-                <input type="pw2" id="pw2" name="pw2" placeholder="confirmez le mot de passe"><br><br>
+                <input type="text" id="username" name="username" placeholder="nom" required><br><br>
+                <input type="text" id="email" name="email" placeholder="nom@email.com" required><br><br>
+                <input type="password" id="pw" name="pw" placeholder="mot de passe" required><br><br>
+                <input type="password" id="pw2" name="pw2" placeholder="confirmez le mot de passe" required><br><br>
                 <input type="submit" name="button" class="button" value="Inscription"><br>
                 <hr>
                 <p>Déjà un compte? <a href="collab_connexion.php">Se connecter</a></p>
@@ -40,7 +40,7 @@
                     $user="XXXX";
                     $password="XXXX";
 
-                    if(isset($_POST['button']) && ($_REQUEST['username']!=null || $_REQUEST['email']!=null || $_REQUEST['pw']!=null || $_REQUEST['pw2'])!=null) {
+                    if(isset($_POST['button']) && ($_REQUEST['username']!=null && $_REQUEST['email']!=null && $_REQUEST['pw']!=null && $_REQUEST['pw2']!=null)) {
                         if($_POST["pw"] == $_POST["pw2"]){
                             try{
                                 $connexion=new PDO("mysql:host=$serveur;dbname=$dbname",$user,$password);
@@ -64,21 +64,22 @@
                                     foreach ($requeteID as $row) {
                                         $_SESSION['id_u'] = $row['id_u'];
                                         $_SESSION['username'] = $row['username'];
-                                        header("Location:collab_main.php");
+                                        $_SESSION['id_p'] = 0;
+                                        header("Location:collab_main.php?sous_demande=1");
                                     }
                             }
 
                             catch(PDOException $erreur){
-                                echo "<script>alert('Impossible de traiter les données.');</script>"; 
+                                echo "<div style='position: fixed; top: 0px; left: 0px; width: 100%; z-index: 2;padding: 15px; background-color: #FF6F4B;text-align: center;'><p style='color: white;'>Impossible de traiter les données</p></div>"; 
                             }
                         }
                         else{
-                            echo "<script>alert('Les mots de passe rentrés ne sont pas identiques!');</script>"; 
+                            echo "<div style='position: fixed; top: 0px; left: 0px; width: 100%; z-index: 2;padding: 15px; background-color: #FF6F4B;text-align: center;'><p style='color: white;'>Les mots de passe rentrés ne sont pas identiques!</p></div>"; 
                         }
 
                     }
                     elseif(isset($_POST['button']) && ($_REQUEST['username']==null || $_REQUEST['email']==null || $_REQUEST['pw']==null || $_REQUEST['pw2'])!=null){
-                        echo "<script>alert('Un ou plusieurs champs n'ont pas été completé(s)!');</script>"; 
+                        echo "<div style='position: fixed; top: 0px; left: 0px; width: 100%; z-index: 2;padding: 15px; background-color: #FF6F4B;text-align: center;'><p style='color: white;'>Un ou plusieurs champs n'ont pas été completé(s)!</p></div>"; 
                     }
                 ?>
         </div>
