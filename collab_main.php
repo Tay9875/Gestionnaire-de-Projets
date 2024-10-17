@@ -15,6 +15,10 @@
                     $_SESSION['id_t']=$_POST['delete'];
                     require('./API/deleteTask.php');
                 }
+                elseif(isset($_POST['modify'])){
+                    $_SESSION['id_t']=$_POST['modify'];
+                    require('./API/modifyTask.php');
+                }
                 elseif(isset($_POST['button2'])){
                     require('./API/addTask.php');
                 }
@@ -79,14 +83,16 @@
                 <img src="logo/6.png" style="top: 100px;">
                 <a href="?sous_demande=1">Mes Projets &emsp;</a>
                 <a href="?sous_demande=2">Mes collab &emsp;</a>
-                <a href="?demande=1">Mur &emsp;</a>
-                <a href="?demande=2">Mur personnel &emsp;</a>
-                <a href="?demande=3">Calendrier &emsp;</a>
-                <a href="?demande=4">Editeur &emsp;</a>
-                <a href="?demande=5">Déconnexion &emsp;</a>
+                <?php if ($_SESSION['id_p']!=0):?>
+                    <a href="?demande=1">Mur &emsp;</a>
+                    <a href="?demande=2">Mur personnel &emsp;</a>
+                    <a href="?demande=3">Calendrier &emsp;</a>
+                    <a href="?demande=4">Editeur &emsp;</a>
+                    <a href="?demande=5">Déconnexion &emsp;</a>
+                <?php endif ?>
             </nav>
             <div class="connexion">
-                <h6><?php echo $_SESSION['email']; ?></h6>
+                <p><?php echo $_SESSION['email']; ?></p>
                 <div class="connexion-circle"></div>
             </div>
         </header>
@@ -108,7 +114,8 @@
                 <?php } ?>
                 <section class="col-md-4">
                     <form id="form1" method="post" class="element">
-                        <input type="text" name="name" placeholder="le titre du projet..." class="text">
+                        <h6>Ajouter un projet</h6>
+                        <input type="text" name="name" placeholder="le titre du projet..." class="text" required>
                         <button type="submit" name="button1" value="Ajouter" class="ajout">+</button>
                     </form>
                 </section>
@@ -134,8 +141,29 @@
                         </div>
                     </div>
                     <p><?php echo htmlspecialchars($row['description']); ?></p>
+                    <?php if($row['a_rendre']!=null): ?>
+                        <p>Date de rendu: <?php echo htmlspecialchars($row['a_rendre']); ?></p>
+                    <?php endif ?>
                 </div>
                 <?php } ?>
+                <?php if(isset($_POST['modify'])):?>
+                    <form id="form" method="post" class="element">
+                        <input type="text" name="description" placeholder="décrivez la tâche..." class="text" required><br>
+                        <select id="assigned_to" name="assigned_to">
+                            <?php foreach ($assigned_to as $row_a) { ?>
+                                <option value="<?php echo htmlspecialchars($row_a['id_u']); ?>"><?php echo htmlspecialchars($row_a['username']); ?></option>
+                            <?php } ?>
+                        </select>
+                        <select id="status" name="status" required>
+                            <option value="1">A Faire</option>
+                            <option value="2">En Cours</option>
+                            <option value="3">Terminé</option>
+                        </select><br>
+                        <label>A rendre pour:</label>
+                        <input type="date" id="date" name="date" class="date" required><br>
+                        <button type="submit" name="button2" value="button2" class="ajout">+</button>
+                    </form>
+                <?php endif ?>
             </section>
 
             <section class="col-md-4 middle-container">
@@ -152,6 +180,9 @@
                         </div>
                     </div>
                     <p><?php echo htmlspecialchars($row['description']); ?></p>
+                    <?php if($row['a_rendre']!=null): ?>
+                        <p>Date de rendu: <?php echo htmlspecialchars($row['a_rendre']); ?></p>
+                    <?php endif ?>
                 </div>
                 <?php } ?>
             </section>
@@ -170,6 +201,9 @@
                         </div>
                     </div>
                     <p><?php echo htmlspecialchars($row['description']); ?></p>
+                    <?php if($row['a_rendre']!=null): ?>
+                        <p>Date de rendu: <?php echo htmlspecialchars($row['a_rendre']); ?></p>
+                    <?php endif ?>
                 </div>
                 <?php } ?>
             </section>
@@ -178,19 +212,19 @@
 
             <section class="col-md-4 left-container">
                 <form id="form2" method="post" class="element">
-                    <input type="text" name="description" placeholder="décrivez la tâche..." class="text"><br>
+                    <input type="text" name="description" placeholder="décrivez la tâche..." class="text" required><br>
                     <select id="assigned_to" name="assigned_to">
                         <?php foreach ($assigned_to as $row_a) { ?>
                             <option value="<?php echo htmlspecialchars($row_a['id_u']); ?>"><?php echo htmlspecialchars($row_a['username']); ?></option>
                         <?php } ?>
                     </select>
-                    <select id="status" name="status">
+                    <select id="status" name="status" required>
                         <option value="1">A Faire</option>
                         <option value="2">En Cours</option>
                         <option value="3">Terminé</option>
                     </select><br>
                     <label>A rendre pour:</label>
-                    <input type="date" id="date" name="date" class="date"><br>
+                    <input type="date" id="date" name="date" class="date" required><br>
                     <button type="submit" name="button2" value="button2" class="ajout">+</button>
                 </form>
             </section>
