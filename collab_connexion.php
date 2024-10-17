@@ -22,8 +22,8 @@
             <form method="post">
                 <h1>Connectez-vous</h1>
                 <p>Et participez à de nouveaux projets.</p>
-                <input type="text" id="email" name="email" placeholder="nom@email.com"><br><br>
-                <input type="pw" id="pw" name="pw" placeholder="mot de passe"><br><br>
+                <input type="text" id="email" name="email" placeholder="nom@email.com" required><br><br>
+                <input type="password" id="pw" name="pw" placeholder="mot de passe" required><br><br>
                 <input type="submit" name="button" class="button" value="Connexion"><br>
                 <hr>
                 <p>Pas de compte? <a href="collab_inscription.php">S'inscrire</a></p>
@@ -37,14 +37,7 @@
                     $password="XXXX";
 
                     if(isset($_POST['button'])){
-                        if(empty($_POST['email'])){
-                            echo "Le champ email est vide.";
-                        }else{
-                            if(empty($_POST['pw'])){
-                                echo "Le champ du mot de passe est vide.";
-                            }
-                            else{
-                                $email = htmlentities($_POST['email'], ENT_QUOTES, "UTF-8"); 
+                        $email = htmlentities($_POST['email'], ENT_QUOTES, "UTF-8"); 
                                 $pw = htmlentities($_POST['pw'], ENT_QUOTES, "UTF-8");
                                 //$hash=password_hash($pw,PASSWORD_DEFAULT);//pour verifier la version hashé du mot de passe
 
@@ -73,17 +66,14 @@
                                             foreach ($requeteID as $row) {
                                                 $_SESSION['id_u'] = $row['id_u'];
                                                 $_SESSION['username'] = $row['username'];
-                                                $_SESSION['id_p'] = 0;//tant que aucun proje n'a été sélectionné
-                                                header("Location:collab_main.php");
+                                                $_SESSION['id_p'] = 0;//tant que aucun projet n'a été sélectionné
+                                                header("Location:collab_main.php?sous_demande=1");
                                             }
                                         
                                     }
-                                    else echo "Le pseudo ou le mot de passe est incorrect, le compte n'a pas été trouvé.";
-                                }
-
+                                    else echo "<div style='position: fixed; top: 0px; left: 0px; width: 100%; z-index: 2;padding: 15px; background-color: #FF6F4B;text-align: center; transition: 0.5s'><p style='color: white;'>Le pseudo ou le mot de passe est incorrect.</p></div>";
+                                    }
                             }
-                        }
-                    }
                 ?>
         </div>
         <div class="space"></div>
