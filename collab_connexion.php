@@ -33,8 +33,8 @@
 
                     $serveur="localhost";
                     $dbname="db_collab";
-                    $user="root";
-                    $password="0000";
+                    $user="XXXX";
+                    $password="XXXX";
 
                     if(isset($_POST['button'])){
                         if(empty($_POST['email'])){
