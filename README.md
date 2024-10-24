@@ -19,7 +19,7 @@ Recommendation: a Notepad based app (I used Sublime Text) / VScode
 This folder has quite a lot of files to use, and that could be a bit more organized but it does most of the job just fine.
 
 So the main code that is made of php and css (that I should have put in a css folder) is going to be directly in the project folder.
-Int the project folders you'll find different folders consisting of API php code and the necessary images that are called in the code.
+In the project folders you'll find different folders consisting of API php code and the necessary images that are called in the code.
 For the BITMAPs, you'll need to create a "isometricTiles" folder in said project.
 Normally, everything is set as it should be.
 
