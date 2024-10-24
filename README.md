@@ -37,7 +37,7 @@ Project idea: https://www.docstring.fr/blog/10-idees-de-projets-a-realiser-avec-
 ## Comments
 This project can easily be perfected but even if it's not the best it was a great way of training myself in PHP and using PHP in a HTML page. An important comment that I have to make is originally all the wall requests weren't divided in wall_1, wall_2 and wall3 (the same goes for the personal_wall) and they were in the same folder but once I started really applying other functions they didn't like the multi query document so just to make it easy for me I divided them, but I know that functions and other solutions could probably be used to make the whole process easier and shorter.
 
-For now the project is not quite finished but the functions that need to be added are quite similar or use he same procedure as ones that exist for other actions, so they don' necessarily need o be taken into account when it comes to the skills I need to learn, but I do want to update thise project with a proper fully built project.
+For now the project is not quite finished but the functions that need to be added are quite similar or use the same procedures as the ones that exist for other actions, so they don't necessarily need to be taken into account when it comes to the skills I need to learn, but I do want to update this project with a proper fully built project.
 
 ## Future updates
 - [x] Front page
