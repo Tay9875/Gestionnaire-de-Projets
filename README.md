@@ -27,6 +27,8 @@ The jpg in the main folder are not necessary.
 ### Credits
 Project idea: https://www.docstring.fr/blog/10-idees-de-projets-a-realiser-avec-django/#1-un-systeme-de-gestion-de-projets
 
+Sidebar: https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp
+
 ## Built with
 - HTML
 - PHP
