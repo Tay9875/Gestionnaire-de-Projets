@@ -7,8 +7,12 @@ This project consists of creating a site allowing a team o collaborate and manag
 <details>
   <summary>My Website</summary>
   <img src="accueil.jpg"/>
-  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/connexion.jpg"/>
-  <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/inscription.jpg"/>
+  <img src="connexion.jpg"/>
+  <img src="inscription.jpg"/>
+  <img src="projects.jpg"/>
+  <img src="mur.jpg"/>
+  <img src="mur perso.jpg"/>
+  <img src="parametre.jpg"/>
 </details>
 
 ## Installation
