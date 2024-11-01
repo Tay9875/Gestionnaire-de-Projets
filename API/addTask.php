@@ -1,8 +1,8 @@
 <?php
     $serveur="localhost";
     $dbname="db_collab";
-    $user="root";
-    $password="0000";
+    $user="XXXX";
+    $password="XXXX";
 
     //la vérification isset du bouton est directement sur la page principale
     if(empty($_POST['description'])){//vérification que le champ texte ne soit pas vide
