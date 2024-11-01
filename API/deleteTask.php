@@ -1,8 +1,8 @@
 <?php
     $serveur="localhost";
     $dbname="db_collab";
-    $user="root";
-    $password="0000";
+    $user="XXXX";
+    $password="XXXX";
 
     try{
         $connexion =new PDO("mysql:host=$serveur;dbname=$dbname",$user,$password);
