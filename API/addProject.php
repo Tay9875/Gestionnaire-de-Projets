@@ -1,8 +1,8 @@
 <?php
     $serveur="localhost";
     $dbname="db_collab";
-    $user="root";
-    $password="0000";
+    $user="XXXX";
+    $password="XXXX";
 
     if(empty($_POST['name'])){
         echo "<script>alert('Il n'y a pas de titre');</script>";
