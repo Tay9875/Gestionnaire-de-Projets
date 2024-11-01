@@ -3,6 +3,10 @@ This project consists of creating a site allowing a team o collaborate and manag
 
 
 ## Preview
+<video>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+
 <details>
   <summary>My Website</summary>
   <img src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/accueil.jpg"/>
