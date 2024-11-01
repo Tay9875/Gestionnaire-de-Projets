@@ -3,7 +3,7 @@ This project consists of creating a site allowing a team o collaborate and manag
 
 
 ## Preview
-<video>
+<video width="320" height="240" controls>
   <source src="https://github.com/Tay9875/Gestionnaire-de-Projets/blob/6460ae09192e91e4921988c92de80a57f442c0c7/Test du Gestionnaire de projet.mp4" type="video/mp4">
 </video>
 
