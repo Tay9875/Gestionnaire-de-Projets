@@ -37,8 +37,8 @@
 
                     $serveur="localhost";
                     $dbname="db_collab";
-                    $user="root";
-                    $password="0000";
+                    $user="XXXX";
+                    $password="XXXX";
 
                     if(isset($_POST['button']) && ($_REQUEST['username']!=null && $_REQUEST['email']!=null && $_REQUEST['pw']!=null && $_REQUEST['pw2']!=null)) {
                         if($_POST["pw"] == $_POST["pw2"]){
