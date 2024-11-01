@@ -1,0 +1,81 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #EEF1EF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  overflow-y: auto;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  color: #363537;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+}
+
+.sidebar .closebtn i:hover{
+  color: #E13661;
+}
+
+.sidebar-element{
+  background: white;
+  padding: 10px;
+  margin: 5px;
+}
+
+label{
+  margin: 5px;
+}
+
+input{
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 30px;
+}
+
+.mini-bar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+input.mini{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 80%;
+}
+
+button.mini{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 30px;
+  width: 15px;
+}
+
+.sidebar-padding{
+  padding: 15px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+}

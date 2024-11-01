@@ -1,0 +1,11 @@
+.element{
+	border-radius: 15px;
+	background: url('images/2.png');
+	background-size: 100%;
+	background-attachment: fixed;
+  	background-position: right bottom; 
+	padding: 10px;
+	margin: 5px;
+
+	box-shadow: 0px 2px 5px #363537;
+}
